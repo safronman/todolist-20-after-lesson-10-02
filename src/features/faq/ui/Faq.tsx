@@ -43,7 +43,7 @@ export const Faq = () => {
         FAQ
       </Typography>
       {faqItems.map((item) => (
-        <Paper sx={{ p: 2, mb: 2 }}>
+        <Paper key={item.id} sx={{ p: 2, mb: 2 }}>
           <Typography variant="h6" component="h3" sx={{ mb: 1 }}>
             {item.question}
           </Typography>
