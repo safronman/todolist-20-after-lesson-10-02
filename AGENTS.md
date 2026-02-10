@@ -37,7 +37,9 @@ pnpm test
 - Add regression tests for bug fixes before merging.
 
 ## Commit & Pull Request Guidelines
-- Use short, imperative commit messages (example: `Fix login error handling`).
+- Use Conventional Commits: `<type>[optional scope][!]: <description>`.
+- Examples: `feat(auth): add login validation`, `fix(tasks): handle empty list response`.
+- Common types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `ci`, `build`, `perf`, `style`.
 - Keep commits focused; avoid mixing refactors with behavior changes.
 - PRs should include a clear summary of what changed and why.
 - Link the related issue/task when available.
