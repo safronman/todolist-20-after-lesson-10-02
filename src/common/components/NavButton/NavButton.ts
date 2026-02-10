@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles"
-import Button from "@mui/material/Button"
+import Button, { type ButtonProps } from "@mui/material/Button"
 
-type Props = {
+type Props = ButtonProps & {
   background?: string
 }
 
