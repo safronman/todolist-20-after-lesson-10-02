@@ -63,6 +63,9 @@ export const Header = () => {
             <NavLink to={Path.Faq} style={{ textDecoration: "none" }}>
               <NavButton background={theme.palette.primary.dark}>Faq</NavButton>
             </NavLink>
+            <NavLink to={Path.Users} style={{ textDecoration: "none" }}>
+              <NavButton background={theme.palette.primary.dark}>Users</NavButton>
+            </NavLink>
             <Switch color={"default"} onChange={changeMode} />
           </div>
         </Container>
