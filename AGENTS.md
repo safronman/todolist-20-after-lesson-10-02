@@ -15,6 +15,7 @@ Use the `@/` alias for imports from `src` (example: `@/common/hooks`).
 - `pnpm build`: type-check with `tsc -b` and build production bundle.
 - `pnpm preview`: preview the production build locally.
 - `pnpm test`: run Vitest in watch mode.
+- After each task, run `pnpm build` to verify the code.
 
 Example:
 ```bash
