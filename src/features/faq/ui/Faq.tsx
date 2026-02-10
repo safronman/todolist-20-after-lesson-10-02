@@ -1,27 +1,38 @@
-import Container from "@mui/material/Container"
+﻿import Container from "@mui/material/Container"
 import Paper from "@mui/material/Paper"
 import Typography from "@mui/material/Typography"
 
-const faqItems = [
+type FaqItem = {
+  id: number
+  question: string
+  answer: string
+}
+
+const faqItems: FaqItem[] = [
   {
-    question: "How do I create a new todolist?",
-    answer: "Use the input field on the main page, enter a title, and submit to create a new todolist.",
+    id: 1,
+    question: "Как создать новый список задач?",
+    answer: "Введите название в поле на главной странице и подтвердите добавление.",
   },
   {
-    question: "How can I add a task to a todolist?",
-    answer: "Open a todolist and use its task input form to add a new task item.",
+    id: 2,
+    question: "Как добавить задачу в нужный список?",
+    answer: "Откройте нужный todolist и используйте форму добавления задач внутри него.",
   },
   {
-    question: "Can I edit task and todolist titles?",
-    answer: "Yes. Click on a title and update it inline using the editable text controls.",
+    id: 3,
+    question: "Можно ли редактировать названия списка и задач?",
+    answer: "Да, нажмите на текст названия и измените его через встроенное редактирование.",
   },
   {
-    question: "How do I filter tasks?",
-    answer: "Use the filter buttons in a todolist to switch between all, active, and completed tasks.",
+    id: 4,
+    question: "Как фильтровать задачи по статусу?",
+    answer: "Используйте кнопки фильтра All, Active и Completed в карточке списка.",
   },
   {
-    question: "Why do I need to log in?",
-    answer: "Authentication keeps your personal todolists secure and tied to your account.",
+    id: 5,
+    question: "Зачем нужна авторизация?",
+    answer: "Она привязывает данные к вашему аккаунту и защищает доступ к задачам.",
   },
 ]
 
@@ -32,7 +43,7 @@ export const Faq = () => {
         FAQ
       </Typography>
       {faqItems.map((item) => (
-        <Paper key={item.question} sx={{ p: 2, mb: 2 }}>
+        <Paper sx={{ p: 2, mb: 2 }}>
           <Typography variant="h6" component="h3" sx={{ mb: 1 }}>
             {item.question}
           </Typography>
